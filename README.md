@@ -7,7 +7,7 @@ Simple TME API Client written in Scala.
 
 ```Scala
 object Main extends App {
-  val apiConnector = new ApiConnector("<YOUR_SECRET>", "<YOUR_TOKEN>")
+  val apiConnector = new ApiConnector("<YOUR_TOKEN>", "<YOUR_SECRET>")
 
   val apiResponse = apiConnector.call(
     "Products/GetPrices",
