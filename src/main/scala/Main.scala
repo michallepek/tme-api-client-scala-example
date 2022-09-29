@@ -8,7 +8,7 @@ object Main extends App {
   val secret = "<YOUR_SECRET>"
   val token = "<YOUR_TOKEN>"
 
-  val apiConnector = new ApiConnector(secret, token)
+  val apiConnector = new ApiConnector(token, secret)
 
   val apiResponse = apiConnector.call(
     "Products/GetPrices",
